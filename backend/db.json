@@ -5,5 +5,11 @@
           "username": "admin",
           "password": "admin"
         }
+    ],
+    "posts": [
+        {
+          
+          
+        }
     ]
 }

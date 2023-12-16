@@ -6,18 +6,22 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { ProfileComponent } from './profile/profile.component';
+import { FeedComponent } from './feed/feed.component';
+import { SearchComponent } from './search/search.component';
+import { PostComponent } from './post/post.component';
+import { NewComponent } from './post/new/new.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    HomeComponent,
-    HeaderComponent,
-    FooterComponent
+    ProfileComponent,
+    FeedComponent,
+    SearchComponent,
+    PostComponent,
+    NewComponent
   ],
   imports: [
     BrowserModule,

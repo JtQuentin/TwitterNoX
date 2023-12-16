@@ -1,0 +1,8 @@
+<form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+    <textarea formControlName="postContent"></textarea>
+    <div *ngIf="postForm.get('postContent')?.hasError('postLength')" class="error-message">
+      {{ postForm.get('postContent')?.getError('message') }}
+    </div>
+    <button type="submit">Publier</button>
+  </form>
+  
