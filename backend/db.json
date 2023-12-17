@@ -4,6 +4,11 @@
       "id": 1,
       "username": "admin",
       "password": "admin"
+    },
+    {
+      "username": "khalemm",
+      "password": "1234",
+      "id": 2
     }
   ],
   "posts": [
@@ -35,6 +40,12 @@
       "content": "t",
       "id": 5,
       "userId": 1,
+      "createdAt": "2023-01-02T14:30:00Z"
+    },
+    {
+      "content": "Je suis le meilleur développeur du monde 🤡",
+      "id": 6,
+      "userId": 2,
       "createdAt": "2023-01-02T14:30:00Z"
     }
   ]

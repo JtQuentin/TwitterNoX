@@ -21,11 +21,15 @@ export class AppComponent {
   }
 
   login() {
+    this.isLoggedIn = true;
     this.router.navigate(['/login']);
   }
 
   toProfile() {
     this.router.navigate(['/profile']);
+  }
+  toFeed() {
+    this.router.navigate(['/']);
   }
 
 }

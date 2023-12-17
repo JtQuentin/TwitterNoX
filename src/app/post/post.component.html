@@ -1,15 +1,14 @@
 <mat-list-item role="listitem">
     <mat-card class="card">
         <mat-card-header>
-            <mat-card-title>Publié par : {{ post.user.username }}</mat-card-title>
+            <mat-card-title>Publié par : {{ post.user.username }} 🔵</mat-card-title>
             <mat-card-subtitle>Date de publication : {{ post.createdAt | date }}</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
             <p>{{ post.content }}</p>
         </mat-card-content>
         <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
+            <button mat-button (click)="plusOne()">💙 {{compteur}}</button>
         </mat-card-actions>
     </mat-card>
 </mat-list-item>

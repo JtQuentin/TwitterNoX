@@ -1,6 +1,5 @@
 <mat-toolbar>
-    <button mat-button class="mat-toolbar">{{title}}</button> 
-
+    <button mat-button ><p class="mat-toolbar" (click)=toFeed()>{{title}}</p></button> 
     <span class = "toolbar-spacer"></span>
     <button mat-button>Rechercher</button>
     <button mat-button *ngIf="!isLoggedIn" (click)="login()">Se connecter</button>

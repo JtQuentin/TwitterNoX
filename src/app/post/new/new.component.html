@@ -4,6 +4,7 @@
     <textarea class="input" matInput formControlName="postContent"></textarea>
     <div *ngIf="postForm.get('postContent')?.hasError('postLength')" class="error-message">
       {{ postForm.get('postContent')?.getError('message') }}
+
     </div>
     <button mat-button color="primary" type="submit">Publier</button>
   </form>
