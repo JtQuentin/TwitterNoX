@@ -15,6 +15,9 @@ import { NewComponent } from './post/new/new.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatListModule} from '@angular/material/list';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +38,9 @@ import {MatButtonModule} from '@angular/material/button';
     HttpClientModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule,
+    MatListModule
 
   ],
   providers: [],
