@@ -48,7 +48,7 @@ import { MatInputModule } from '@angular/material/input';
     MatListModule,
     MatFormFieldModule,
     MatSidenavModule,
-    MatGridListModule
+    MatGridListModule,
     MatIconModule,
     MatInputModule
   ],
