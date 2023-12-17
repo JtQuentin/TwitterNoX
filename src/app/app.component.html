@@ -1,6 +1,5 @@
 <mat-toolbar>
-    <button mat-button>{{title}}</button> 
-
+    <button mat-button ><p class="mat-toolbar" (click)=toFeed()>{{title}}</p></button> 
     <span class = "toolbar-spacer"></span>
     <form [formGroup]="searchForm">
       <mat-form-field>
@@ -10,6 +9,6 @@
   </form>
     <button mat-button *ngIf="!isLoggedIn" (click)="login()">Se connecter</button>
     <button mat-button *ngIf="isLoggedIn" (click)="toProfile()">Mon profil</button>
-
 </mat-toolbar>
 <router-outlet></router-outlet>
+

@@ -28,13 +28,15 @@ export class AppComponent {
   }
 
   login() {
-    this.router.navigate(['/login']).then(() => {
-      this.checkLoginStatus();
-    });
+    this.isLoggedIn = true;
+    this.router.navigate(['/login']);
   }
 
   toProfile() {
     this.router.navigate(['/profile']);
+  }
+  toFeed() {
+    this.router.navigate(['/']);
   }
 
   search() {

@@ -1,11 +1,7 @@
-<!--<app-post *ngFor="let post of posts" [post]="post"></app-post>-->
-
-<mat-list role="list">
-    <app-post *ngFor="let post of posts" [post]="post"></app-post>
-</mat-list>
-
-<app-new *ngIf="isLoggedIn"></app-new>
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened><app-new *ngIf="isLoggedIn"></app-new></mat-drawer>
+    <mat-drawer-content><app-post *ngFor="let post of posts" [post]="post"></app-post></mat-drawer-content>
+</mat-drawer-container>
 
 <button *ngIf="!isLoggedIn" (click)="login()">Se connecter</button>
-
 <a *ngIf="isLoggedIn" [routerLink]="['/profile']">Profil</a>

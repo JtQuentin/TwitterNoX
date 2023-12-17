@@ -4,6 +4,11 @@
       "id": 1,
       "username": "admin",
       "password": "admin"
+    },
+    {
+      "username": "khalemm",
+      "password": "1234",
+      "id": 2
     }
   ],
   "posts": [
