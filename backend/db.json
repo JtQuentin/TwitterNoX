@@ -8,8 +8,8 @@
     ],
     "posts": [
         {
-          
-          
+          "id": 1,
+          "content": "Test 1er post"
         }
     ]
 }

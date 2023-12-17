@@ -1,7 +1,5 @@
-<div *ngFor="let post of posts">
-    <p>{{ post.content }}</p>
+<app-post *ngFor="let post of posts" [post]="post"></app-post>
 
-</div>
-  
-<app-new></app-new>
-  
+<button *ngIf="!isLoggedIn" (click)="login()">Se connecter</button>
+
+<a *ngIf="isLoggedIn" [routerLink]="['/profile']">Profil</a>

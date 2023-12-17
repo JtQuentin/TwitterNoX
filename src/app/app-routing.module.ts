@@ -7,6 +7,7 @@ import { FeedComponent } from './feed/feed.component';
 import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
+  {path : '', redirectTo: '/feed', pathMatch: 'full' },
   {path : 'login', component: LoginComponent},
   {path : 'register', component: RegisterComponent},
   {path : 'profile', component: ProfileComponent},
