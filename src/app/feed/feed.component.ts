@@ -17,15 +17,14 @@ export class FeedComponent {
     this.checkLoginStatus();
   }
 
+  ngOnInit() {
+    this.loadPosts();
+  }
+
   loadPosts() {
-    this.postService.getPosts().subscribe(
-      (data) => {
-        this.posts = data;
-      },
-      (error) => {
-        console.error('Erreur lors du chargement des posts', error);
-      }
-    );
+    this.postService.getPosts().subscribe((posts) => {
+      this.posts = posts;
+    });
   }
 
   checkLoginStatus() {
