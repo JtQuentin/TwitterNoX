@@ -1,1 +1,21 @@
-<p>profile works!</p>
+<div *ngIf="profile">
+    <h2>Profil de {{ profile.username }}</h2>
+  
+    <div>
+      <label for="bio">Biographie:</label>
+      <textarea id="bio" [(ngModel)]="profile.bio" name="bio"></textarea>
+    </div>
+  
+    <div>
+      <label for="birthDay">Jour de naissance:</label>
+      <input id="birthDay" [(ngModel)]="profile.birthDay" name="birthDay" type="number">
+    </div>
+  
+    <div>
+      <label for="birthMonth">Mois de naissance:</label>
+      <input id="birthMonth" [(ngModel)]="profile.birthMonth" name="birthMonth" type="number">
+    </div>
+  
+    <button (click)="updateProfile()">Enregistrer les modifications</button>
+  </div>
+  

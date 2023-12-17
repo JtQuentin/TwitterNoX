@@ -25,10 +25,21 @@
       "userId": 1,
       "createdAt": "2023-01-02T14:30:00Z"
     },
+    {
       "content": "3e post",
       "userId": 1,
       "createdAt": "2023-12-17T18:52:39.528Z",
       "id": 4
+    }
+  ],
+  "profiles": [
+    {
+      "id": 1,
+      "userId": 1,
+      "username": "admin_profile",
+      "bio": "Bienvenue sur mon profil !",
+      "birthDay": 1,
+      "birthMonth": 1
     }
   ]
 }
