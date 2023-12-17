@@ -1,15 +1,19 @@
 {
-    "users": [
-        {
-          "id": 1,
-          "username": "admin",
-          "password": "admin"
-        }
-    ],
-    "posts": [
-        {
-          "id": 1,
-          "content": "Test 1er post"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "content": "Test 1er post"
+    },
+    {
+      "content": "Test de création de post avec le component new",
+      "id": 2
+    }
+  ]
 }
