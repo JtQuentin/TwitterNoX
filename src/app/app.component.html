@@ -1,12 +1,10 @@
 <mat-toolbar>
-    <button mat-button>{{title}}</button> 
+    <button mat-button class="mat-toolbar">{{title}}</button> 
 
     <span class = "toolbar-spacer"></span>
-    <button mat-button>
-      Rechercher
-    </button>
+    <button mat-button>Rechercher</button>
     <button mat-button *ngIf="!isLoggedIn" (click)="login()">Se connecter</button>
     <button mat-button *ngIf="isLoggedIn" (click)="toProfile()">Mon profil</button>
-
 </mat-toolbar>
 <router-outlet></router-outlet>
+

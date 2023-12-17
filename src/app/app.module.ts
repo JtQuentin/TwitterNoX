@@ -17,6 +17,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -40,7 +43,10 @@ import {MatListModule} from '@angular/material/list';
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
-    MatListModule
+    MatListModule,
+    MatFormFieldModule,
+    MatSidenavModule,
+    MatGridListModule
 
   ],
   providers: [],

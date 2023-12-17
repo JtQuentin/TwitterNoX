@@ -1,8 +1,12 @@
-<form [formGroup]="postForm" (ngSubmit)="onSubmit()">
-    <textarea formControlName="postContent"></textarea>
+<mat-card class="card">
+  <mat-card-content><h3>Commencer un post...</h3></mat-card-content>
+  <form mat-form-fiel [formGroup]="postForm" (ngSubmit)="onSubmit()">
+    <textarea class="input" matInput formControlName="postContent"></textarea>
     <div *ngIf="postForm.get('postContent')?.hasError('postLength')" class="error-message">
       {{ postForm.get('postContent')?.getError('message') }}
     </div>
-    <button type="submit">Publier</button>
+    <button mat-button color="primary" type="submit">Publier</button>
   </form>
+</mat-card>
+
   
