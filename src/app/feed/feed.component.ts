@@ -14,7 +14,7 @@ export class FeedComponent {
 
   constructor(private postService: PostService, private authService: AuthService, private router: Router) {
     this.loadPosts();
-    this.checkLoginStatus();
+    //this.checkLoginStatus();
   }
 
   loadPosts() {

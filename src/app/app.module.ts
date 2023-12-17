@@ -12,6 +12,9 @@ import { FeedComponent } from './feed/feed.component';
 import { SearchComponent } from './search/search.component';
 import { PostComponent } from './post/post.component';
 import { NewComponent } from './post/new/new.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,11 @@ import { NewComponent } from './post/new/new.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
