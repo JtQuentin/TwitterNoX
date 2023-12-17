@@ -31,22 +31,21 @@
       "createdAt": "2023-01-02T14:30:00Z"
     },
     {
-      "content": "t",
-      "id": 4,
+      "content": "3e post",
       "userId": 1,
-      "createdAt": "2023-01-02T14:30:00Z"
-    },
-    {
-      "content": "t",
-      "id": 5,
-      "userId": 1,
-      "createdAt": "2023-01-02T14:30:00Z"
-    },
-    {
-      "content": "Je suis le meilleur développeur du monde 🤡",
-      "id": 6,
-      "userId": 2,
-      "createdAt": "2023-01-02T14:30:00Z"
+      "createdAt": "2023-12-17T18:52:39.528Z",
+      "id": 4
     }
-  ]
+  ],
+  "profiles": [
+    {
+      "id": 1,
+      "userId": 1,
+      "username": "admin_profile",
+      "bio": "Bienvenue sur mon profil !",
+      "birthDay": 1,
+      "birthMonth": 1
+    }
+  ],
+  "searchResults": []
 }
