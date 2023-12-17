@@ -2,9 +2,12 @@
     <button mat-button>{{title}}</button> 
 
     <span class = "toolbar-spacer"></span>
-    <button mat-button>
-      Rechercher
-    </button>
+    <form [formGroup]="searchForm">
+      <mat-form-field>
+        <input matInput formControlName="searchForm" placeholder="Rechercher">
+        <a [routerLink]="['/search']" [queryParams]="{ q: searchForm.value.searchForm }">Effectuer la recherche</a>
+      </mat-form-field>      
+  </form>
     <button mat-button *ngIf="!isLoggedIn" (click)="login()">Se connecter</button>
     <button mat-button *ngIf="isLoggedIn" (click)="toProfile()">Mon profil</button>
 
