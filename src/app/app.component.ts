@@ -21,7 +21,9 @@ export class AppComponent {
   }
 
   login() {
-    this.router.navigate(['/login']);
+    this.router.navigate(['/login']).then(() => {
+      this.checkLoginStatus();
+    });
   }
 
   toProfile() {
